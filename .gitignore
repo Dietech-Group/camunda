@@ -9,3 +9,9 @@
 
 # rspec failure tracking
 .rspec_status
+
+# RubyMine project files
+.idea
+
+# A Gem's Gemfile.lock should NOT be in source control
+Gemfile.lock
