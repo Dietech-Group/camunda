@@ -1,11 +1,10 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "camunda/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "camunda"
-  spec.version       = Camunda::VERSION
+  spec.version       = "0.1.5"
   spec.authors       = ["Martijn Lafeber"]
   spec.email         = ["martijn@coupling.nl"]
 
