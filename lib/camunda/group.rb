@@ -3,6 +3,11 @@ class Camunda::Group < Camunda::Api
     'group'
   end
 
+  def self.delete(id)
+    group = self.new(id: id)
+    group.delete("")
+  end
+
   def self.member_create(id, user_id)
     group = self.new(id: id)
     group.put("members/#{user_id}", nil, nil)
