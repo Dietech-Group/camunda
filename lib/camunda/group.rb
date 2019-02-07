@@ -3,6 +3,14 @@ class Camunda::Group < Camunda::Api
     'group'
   end
 
+  def self.create(id, name)
+    self.post(:create, nil,
+              {
+                  "id": id,
+                  "name": name,
+              }.to_json)
+  end
+
   def self.delete(id)
     group = self.new(id: id)
     group.delete("")
