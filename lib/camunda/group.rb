@@ -4,7 +4,7 @@ class Camunda::Group < Camunda::Api
   end
 
   def self.create(id, name)
-    self.post(:create, nil,
+    self.post("create", nil,
               {
                   "id": id,
                   "name": name,
