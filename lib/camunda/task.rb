@@ -4,11 +4,10 @@ class Camunda::Task < Camunda::Api
   end
 
   def self.comment_create(id, comment)
-    task = self.new(id: id)
-    task.post("comment/create", nil,
-               {
-                   "message": comment
-               })
+    self.post("#{id}/comment/create", nil,
+              {
+                  "message": comment
+              })
   end
 
   def self.comments(id)
