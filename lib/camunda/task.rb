@@ -7,7 +7,7 @@ class Camunda::Task < Camunda::Api
     self.post("#{id}/comment/create", nil,
               {
                   "message": comment
-              })
+              }.to_json)
   end
 
   def self.comments(id)
