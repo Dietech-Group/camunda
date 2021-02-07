@@ -9,3 +9,6 @@
 
 # rspec failure tracking
 .rspec_status
+
+# A Gem's Gemfile.lock should NOT be in source control
+Gemfile.lock
